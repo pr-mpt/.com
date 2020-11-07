@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "concurrently \"npm run-script compile -w\" \"npm run-script preview\"",
+    "build": "NODE_ENV=production npm run-script compile",
+    "compile": "postcss src/prompt.css -o public/prompt.css",
+    "preview": "live-server ./public --port=8190 -V"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^8",
+    "tailwindcss": "^1.9"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3",
+    "live-server": "^1.2.1"
+  }
+}
