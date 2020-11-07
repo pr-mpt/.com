@@ -6,7 +6,7 @@ module.exports = {
       'utilities',
     ],
     'content': [
-      './src/**/*.html',
+      './public/**/*.html',
     ],
   },
   theme: {
